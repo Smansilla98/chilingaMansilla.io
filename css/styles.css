@@ -1,0 +1,121 @@
+
+
+/* Estilos generales */
+*{
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color:white;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-family: 'Fira Sans', sans-serif;
+}
+body{
+    background-color:#1d1c1cef;    
+    /*background: linear-gradient(#4BC0E5,#D86A15, #0F8A2E);*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;        
+}
+
+
+/* Header | Logo | Navegación */
+header{
+    padding:5rem;
+    z-index: 10;
+    height: 100px;
+}
+#logo{
+    float:left; 
+    width:80%;
+
+}
+#logo-imagen{
+    width: 15%;
+    margin: -3rem;
+}
+
+ul{
+    display: flex;
+    justify-content: flex-end;
+}
+li{
+    list-style-type: none;
+    margin: 2rem 1rem 0px 2rem;
+}
+a{
+    color:rgb(255, 255, 255);
+    text-decoration:none;
+    margin: 0 20px;
+    padding: 0 4px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Contenido de la página */
+.contenido h1{
+    font-size: 34px;
+    margin:2rem;    
+    
+}
+.cartel{
+    text-align-last: center;
+    margin-top: 20vh;
+    box-sizing: content-box;
+    width: 400px;
+    height:200px;
+    border: solid #ffffff77 5px;
+    padding: 5px;
+    margin-left: 40%;
+    background: rgb(218, 124, 16);
+    box-shadow: 30px 10px rgba(17, 18, 18, 0.09);
+    border-radius: 32px;
+}
+.cartel h3{
+    font-size: 30px;
+    margin-top: 5%;
+    justify-content: space-around;
+    text-transform: uppercase;
+
+}
+#construccion{
+    margin-top:5%;
+    height:100px;
+    filter: invert(100%);
+}
+
+
+/* Footer */
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+}
+#footer{
+    text-align-last: center;
+    padding-bottom: 2rem;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+
+.banner{
+    background-image: url("../img/chilinga1.jpg");
+    background-position-y: 28%;
+    height: 50%;
+}
+
+.publicidad{
+    background-image: url("../img/senderos.jpg");
+    margin-top: 2rem;
+    width: 1083px;
+    height: 148px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
