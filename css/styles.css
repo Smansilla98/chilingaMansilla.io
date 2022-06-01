@@ -223,6 +223,7 @@ opacity: 0.7;
 
 
 /* medias query*/
+/*Página inicio*/
 @media (max-width:425px){
     .contenido{
         display: grid;
@@ -290,3 +291,30 @@ opacity: 0.7;
         text-align: center;
     }
 }
+
+
+/*Historia*/
+.about{
+    display: -webkit-inline-box;
+    
+}
+article{
+    width: 50%;
+    display: inline-grid;
+}
+@media (max-width: 425px) {
+    .about{
+    margin-top: 24vh;
+    display: table;
+    }
+
+    article{
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .articulo{
+        display: grid;
+    }
+
+}
+
