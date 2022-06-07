@@ -20,19 +20,19 @@
         <link type="text/css" rel="stylesheet" href="css/styles.css">
     </head>
     <!--Finalización metadata-->
-    <!--Comienzo body-->
-    <body>
-        <!--Header | Barra de navegación-->        
-        <header>
+    <!--Comienzo body-->    
+    <body class="container">
+         <!--Header | Barra de navegación-->        
+         <header class="row">
             <!--Logo-->
-            <div id="logo">
+            <div class="col-6" id="logo">
                 <a href="index.html">
                     <img id="logo-imagen" src="img/logo.png">
                 </a>
             </div>
             <!--Finalización de logo-->
             <!--Barra de navegación-->
-            <nav>
+            <nav class="navbar navbar-default col-6">
                 <ul>
                     <li><a href="about.html">Historia</a></li>
                     <li><a href="gallery.html">Galeria</a></li>
@@ -40,27 +40,39 @@
                     <li><a href="contact.html">Contacto</a></li>
                 </ul>
             </nav>
-            <!--Finalización barra de navegación-->
-            
+            <!--Finalización barra de navegación-->            
         </header>
         <!--Finalización header-->
 
         <!--Contenido página-->
         <main class="contenido">
-            <section>
-                <h1>Página de Contacto</h1>
-                <form action="#">
-                    <label for="nombre">Nombre:</label><br>
-                    <input type="text" id="nombre" name="nombre" value="nombre"><br>
-                    <label for="apellido">Apellido:</label><br>
-                    <input type="text" id="apellido" name="apellido" value="apellido"><br><br>
-                    <label for="email">Correo:</label><br>
-                    <input type="email" id="email" name="email" value="email"><br><br>
-                    <textarea name="textarea" rows="10" cols="50">Deja tu mensaje acá</textarea>
-                    <input type="submit" value="Enviar">
-                  </form> 
-                  
-                  <p>Todos los mensajes serán respondidos por <a href="mailto:info@chilinga.com">Info@chilinga.com</a></p>
+            <section class="row">
+                <h1 class="col-12">Página de Contacto</h1>
+                <div class="col-6">
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label><br>
+                            <input type="text" class="form-control" id="nombre" value="nombre" placeholder="nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="apellido">Apellido:</label><br>
+                            <input type="text" class="form-control" id="apellido" value="apellido" placeholder="apellido">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Nombre:</label><br>
+                            <input type="email" class="form-control" id="email" value="email" placeholder="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Deja tu mensaje acá</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <input type="submit" value="Enviar" class="btn btn-primary d-block">
+                    </form> 
+                    <p>Todos los mensajes serán respondidos por <a href="mailto:info@chilinga.com">Info@chilinga.com</a></p>
+                </div>
+                <div class="col-6">
+                    <img src="img/chilinga1.jpg" alt="">
+                </div>
             </section>
         </main>
         <!--Finalización de contenido-->
