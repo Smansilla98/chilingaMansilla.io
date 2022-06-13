@@ -11,77 +11,83 @@
         <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&display=swap" rel="stylesheet">
         <!--Bootstrap-->
         <!--Css-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
-        <!--Javascript-->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" ></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">  
         <!--Hoja de estilos-->
-        <link type="text/css" rel="stylesheet" href="css/styles.css">
+        <link type="text/css" rel="stylesheet" href="css/index.css">
     </head>
     <!--Finalización metadata-->
     <!--Comienzo body-->
     <body class="container">
-         <!--Header | Barra de navegación-->        
-         <header class="row">
+        <!--Header | Barra de navegación-->        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <!--Logo-->
-            <div class="col-6" id="logo">
-                <a href="index.html">
-                    <img id="logo-imagen" src="img/logo.png">
-                </a>
-            </div>
+            <a class="navbar-brand m-auto" href="index.html" id="logo"><img id="logo-imagen" src="img/logo.png"></a>           
             <!--Finalización de logo-->
-            <!--Barra de navegación-->
-            <nav class="navbar navbar-default col-6" id="nav">
-                <ul>
-                    <li><a href="about.html">Historia</a></li>
-                    <li><a href="gallery.html">Galeria</a></li>
-                    <li><a href="localities.html">Sedes</a></li>
-                    <li><a href="contact.html">Contacto</a></li>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapsado" aria-controls="navbarCollapsado" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapsado">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">Historia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Galeria</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="localities.html">Sedes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contacto</a>
+                  </li>
+                  
                 </ul>
-            </nav>
-            <!--Finalización barra de navegación-->            
-        </header>
-        <!--Finalización header-->
+            </div>
+        </nav>
+        <!--Finalización barra de navegación-->
 
         <!--Contenido página-->
         <main class="contenido">
-
-            <h1>Sedes</h1>
+            <div class="d-flex">
+                <h1>Sedes</h1>
+            </div>
             <section class="row">
-                <div>
+                <div class="col-sm-12 col-md-6 sedes">
                     <h2>Sede Palomar:</h2>
                     <h3><b>General Victorica 386 - Palomar</b></h3>
-                    <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-58.597635626792915%2C-34.608380528939094%2C-58.59427750110627%2C-34.60633847291474&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=19/-34.60736/-58.59596">Ver mapa más grande</a></small>
+                    <iframe width="400" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-58.597635626792915%2C-34.608380528939094%2C-58.59427750110627%2C-34.60633847291474&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=19/-34.60736/-58.59596">Ver mapa más grande</a></small>
                 </div>
-                <div>
+                <div class="col-sm-12 col-md-6 sedes">
                     <h2>Sede Saavedra:</h2>
                     <h3><b>Ruiz huidobro 4228 - Saavedra</b></h3>
-                    <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-58.49145770072938%2C-34.553622814723475%2C-58.48809957504273%2C-34.551579412928184&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=19/-34.55260/-58.48978">Ver mapa más grande</a></small>
+                    <iframe width="400" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-58.49145770072938%2C-34.553622814723475%2C-58.48809957504273%2C-34.551579412928184&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=19/-34.55260/-58.48978">Ver mapa más grande</a></small>
                 </div>
-                <div>
+                <div class="col-sm-12 col-md-6 sedes">
                     <h2>Sede Quilmes:</h2>
                     <h3><b>Moreno 882 - Quilmes</b></h3>
-                    <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-58.25672149658204%2C-34.72800796626174%2C-58.25336337089539%2C-34.72596885678723&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=19/-34.72699/-58.25504">Ver mapa más grande</a></small>
+                    <iframe width="400" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-58.25672149658204%2C-34.72800796626174%2C-58.25336337089539%2C-34.72596885678723&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=19/-34.72699/-58.25504">Ver mapa más grande</a></small>
                 </div>
-                <div>
+                <div class="col-sm-12 col-md-6 sedes">
                     <h2>Sede Varela:</h2>
                     <h3><b>Cerro Aconcagua 2153 - F. Varela</b></h3>
-                    <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-58.27591538429261%2C-34.794677844942846%2C-58.26919913291932%2C-34.790602867665754&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=18/-34.79264/-58.27256">Ver mapa más grande</a></small>
+                    <iframe width="400" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-58.27591538429261%2C-34.794677844942846%2C-58.26919913291932%2C-34.790602867665754&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=18/-34.79264/-58.27256">Ver mapa más grande</a></small>
                 </div>
-                <div>
+                <div class="col-sm-12 col-md-6 sedes">
                     <h2>Sede Banfield:</h2>
                     <h3><b>Alsina 261 - Banfield</b></h3>
-                    <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-58.394267857074745%2C-34.740188668578035%2C-58.3909097313881%2C-34.73814985962592&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=19/-34.73917/-58.39259">Ver mapa más grande</a></small>
+                    <iframe width="400" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-58.394267857074745%2C-34.740188668578035%2C-58.3909097313881%2C-34.73814985962592&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=19/-34.73917/-58.39259">Ver mapa más grande</a></small>
                 </div>
             </section>
         </main>
         <!--Finalización de contenido-->
 
         <!--Footer-->
-        <footer>
-            <section id="redesSociales">
-                <!--Redes sociales-->
+        <footer class="navbar navbar-dark bg-dark">
+            <div class="col-md-4 col-sm-12" id="redesSociales">
+                <!-- Redes sociales -->
                 <h5>Nuestras redes</h5>
                 <div id="redesSocialesIconos">
                     <div>
@@ -97,14 +103,16 @@
                         <a href="https://www.instagram.com/lachilinga/" target="_blank"><img src="img\instagram.svg"></a> 
                     </div>
                 </div>
-            </section>
-            <ol>
-                <li>
-                    <p id="footer">La chilinga - Escuela popular de percusión | 2022</p>
-                </li>
-            </ol>
+            </div>
+            <div class="col-12 d-flex mt-5">
+                <p id="footer">La chilinga - Escuela popular de percusión | 2022</p>
+            </div>
         </footer>
-        <!--Finalización de footer-->    
+        <!--Finalización de footer-->
+        <!--Javascript-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" ></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
     </body>
     <!--Finalización de body-->
 </html> 
