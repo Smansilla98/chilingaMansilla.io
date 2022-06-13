@@ -1,0 +1,117 @@
+@charset "UTF-8";
+/* Estilos generales */
+* {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-family: 'Fira Sans', sans-serif; }
+
+body {
+  background-color: #1d1c1cef; }
+
+/*Navbar y logo*/
+#logo {
+  display: contents; }
+
+#logo-imagen {
+  width: 40%; }
+  @media (min-width: 576px) {
+    #logo-imagen {
+      width: 20%;
+      margin-left: 10vh; } }
+
+/*Banner principal*/
+.bloqueInicial {
+  text-align: -webkit-center; }
+  .bloqueInicial #div-logo #logo-banner {
+    width: 50%; }
+
+.banner {
+  background-image: url("../img/chilinga1.jpg");
+  background-position-y: 65%;
+  height: 50%; }
+
+/*Publicidad*/
+.publicidad {
+  background-image: url("../img/senderos.jpg");
+  width: 100%; }
+  @media (min-width: 576px) {
+    .publicidad {
+      margin-top: 1rem;
+      height: 100px;
+      background-repeat: no-repeat;
+      background-position-y: 45%; } }
+  .publicidad a {
+    color: black;
+    text-decoration: none; }
+
+/*Discografía*/
+.bloqueTres {
+  border-color: black;
+  text-align: center;
+  align-items: center;
+  padding-top: 2rem; }
+  .bloqueTres a {
+    color: white; }
+  .bloqueTres h4 {
+    font-size: 40px; }
+  .bloqueTres .img-container {
+    text-align: center; }
+  .bloqueTres .imgbox {
+    display: inline-block;
+    padding: 10px;
+    vertical-align: middle; }
+    .bloqueTres .imgbox p {
+      margin-top: 1rem; }
+    .bloqueTres .imgbox img {
+      width: 200px;
+      height: auto; }
+  .bloqueTres img {
+    display: block;
+    max-width: 100%; }
+    .bloqueTres img:hover {
+      cursor: pointer;
+      opacity: 0.7; }
+
+/*Videos*/
+.bloqueCuatro {
+  display: flex; }
+  .bloqueCuatro h4 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 4rem; }
+  .bloqueCuatro #frameCuatro {
+    display: -webkit-inline-box; }
+
+/*Redes Sociales | Footer */
+footer {
+  position: absolute;
+  margin-top: 1rem; }
+  footer p {
+    font-size: 13px; }
+  footer #redesSociales {
+    display: table;
+    margin-top: 3rem; }
+    footer #redesSociales h5 {
+      font-size: 30px;
+      text-align: center; }
+  footer #redesSocialesIconos {
+    display: flex; }
+    footer #redesSocialesIconos div img {
+      width: 30px; }
+
+/*Historia*/
+#chilinga-historia {
+  width: 100%; }
+
+article {
+  width: 100%; }
+
+/*Sedes*/
+.sedes {
+  display: inline-grid;
+  width: 100%; }

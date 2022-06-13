@@ -13,65 +13,79 @@
         <!--Css-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">  
         <!--Hoja de estilos-->
-        <link type="text/css" rel="stylesheet" href="css/styles.css">
+        <link type="text/css" rel="stylesheet" href="css/index.css">
     </head>
     <!--Finalización metadata-->
+
     <!--Comienzo body-->
     <body class="container">
         <!--Header | Barra de navegación-->        
-        <header class="row">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <!--Logo-->
-            <div class="col-6" id="logo">
-                <a href="index.html">
-                    <img id="logo-imagen" src="img/logo.png">
-                </a>
-            </div>
+            <a class="navbar-brand m-auto" href="index.html" id="logo"><img id="logo-imagen" src="img/logo.png"></a>           
             <!--Finalización de logo-->
-            <!--Barra de navegación-->
-            <nav class="navbar navbar-default col-6" id="nav">
-                <ul>
-                    <li><a href="about.html">Historia</a></li>
-                    <li><a href="gallery.html">Galeria</a></li>
-                    <li><a href="localities.html">Sedes</a></li>
-                    <li><a href="contact.html">Contacto</a></li>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapsado" aria-controls="navbarCollapsado" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapsado">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">Historia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Galeria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="localities.html">Sedes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contacto</a>
+                  </li>
+                  
                 </ul>
-            </nav>
-            <!--Finalización barra de navegación-->            
-        </header>
-        <!--Finalización header-->
+            </div>
+        </nav>
+        <!--Finalización barra de navegación-->
 
+        
         <!--Contenido página-->
-        <main class="contenido">
-            <section class="bloqueInicial banner jumbotron">
+        <main class="content">
+            <!--Banner inicial-->
+            <section class="bloqueInicial banner d-none d-md-block">
                 <div id="div-logo">
-                    <div>
-                        <img src="img\logo.png"  id="logo-banner">
-                    </div>           
+                    <img src="img\logo.png"  id="logo-banner">
                 </div>                
             </section>
-            <section class="publicidad">
-                <a href="http://www.instagram.com/senderosartesanias" target="_blank"   >Tienda oficial</a>               
+
+            <!--Publicidad | Tienda oficial-->
+            <section class="publicidad d-md-block col-6">
+                <a href="http://www.instagram.com/senderosartesanias" target="_blank">Tienda oficial</a>               
             </section>
+
+            <!--Discografia-->
             <section class="bloqueTres">
                 <div class="img-container row">
                     <h4 class="col-12">Discografía</h4>
-                    <div class="imgbox col-2 p-2">
+                    <div class="imgbox col-md-2 p-2">
                         <a href="https://open.spotify.com/album/3pcJtvZni7zMOAg2IaOyTC?si=Y1PMUT0FSV6Of6sv-kC0Lw" target="_blank"><img src="img\percusion.jpg"></a>
                         <p>Percusión - 1998</p>
                     </div>
-                    <div class="imgbox col-2 p-2">
+                    <div class="imgbox col-md-2 p-2">
                         <a href="https://open.spotify.com/album/5sTnx1pHVDgMylLmTmATGi?si=iFz6uDifRl6hTEtflqXsRA" target="_blank"><img src="img\viejosdioses.jpg"></a>
                         <p>Viejos Dioses - 2001</p>
                     </div>
-                    <div class="imgbox col-2 p-2">
+                    <div class="imgbox col-md-2 p-2">
                         <a href="https://open.spotify.com/album/0kaAl3qHyZipPm1HzEM5NS?si=BjeiqTjxRwuZO4QKWE6e3Q" target="_blank"><img src="img\muñequitos.jpg"></a>
                         <p>Muñequitos del Tambor - 2004</p>
                     </div>
-                    <div class="imgbox col-2 p-2">
+                    <div class="imgbox col-md-2 p-2">
                         <a href="https://open.spotify.com/album/4LIAi4xZdLWhO1sfZpIGcb?si=9FD_hMSNSFmbYY1iJ_Jkng" target="_blank"><img src="img\raices.jpg"></a>
                         <p>Raices - 2007</p>
                     </div>
-                    <div class="imgbox col-2 p-2">
+                    <div class="imgbox col-md-2 p-2">
                         <a href="https://open.spotify.com/album/6OMgEQdlMLMJYcVnmVMu8Q?si=PJFqg2IKRpGES4vwkKnjVg" target="_blank"><img src="img\fantasma.jpg"></a>
                         <p>Fantasma - 2010</p>
                     </div>
@@ -80,36 +94,37 @@
                     </div>
                 </div>
             </section>
+
+            <!--Videos-->
             <section class="bloqueCuatro row">
-                    <h4 class="col-12">Videos</h4>
-                <div class="col-6" id="frameCuatro">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/UXrFtW144GA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <div class="col-12" id="textoFrame">
-                        <h5><b>La Chilinga - Percusión(1999)</b></h5>
-                        <ol>
-                            <li>Intro</li>
-                            <li>Sacateca</li>
-                            <li>Tambores Iyesá</li>
-                            <li>Buscando a Coco</li>
-                            <li>De rumba</li>
-                            <li>Chiruda Stone</li>
-                            <li>Nunca a las dos</li>
-                            <li>Mongo Kutá</li>
-                            <li>La llamada (feat. Ariel Prat)</li>
-                            <li>Sandombe</li>
-                            <li>Malamakuá</li>
-                            <li>Toque a Eleggua (feat. Beto Rodas)</li>                        
-                        </ol>
-                    </div>
-                </div>
+                <h4 class="col-12">Videos</h4>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/UXrFtW144GA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="col-6 d-none d-lg-block" id="frameCuatro"></iframe>                    
+                <iframe width="200" height="200" src="https://www.youtube.com/embed/UXrFtW144GA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="col-6 d-block d-sm-none" id="frameCuatro"></iframe>
+                <!-- <div class="col-sm-12 col-md-6" id="textoFrame">
+                    <h5><b>La Chilinga - Percusión(1999)</b></h5>
+                    <ol>
+                        <li>Intro</li>
+                        <li>Sacateca</li>
+                        <li>Tambores Iyesá</li>
+                        <li>Buscando a Coco</li>
+                        <li>De rumba</li>
+                        <li>Chiruda Stone</li>
+                        <li>Nunca a las dos</li>
+                        <li>Mongo Kutá</li>
+                        <li>La llamada (feat. Ariel Prat)</li>
+                        <li>Sandombe</li>
+                        <li>Malamakuá</li>
+                        <li>Toque a Eleggua (feat. Beto Rodas)</li>                        
+                    </ol>
+                </div> -->
             </section>
         </main>
-        <!--Finalización de contenido-->
+        <!-- Finalización de contenido -->
 
-        <!--Footer-->
-        <footer>
-            <section id="redesSociales">
-                <!--Redes sociales-->
+
+        <footer class="navbar navbar-dark bg-dark">
+            <div class="col-md-4 col-sm-12" id="redesSociales">
+                <!-- Redes sociales -->
                 <h5>Nuestras redes</h5>
                 <div id="redesSocialesIconos">
                     <div>
@@ -125,12 +140,10 @@
                         <a href="https://www.instagram.com/lachilinga/" target="_blank"><img src="img\instagram.svg"></a> 
                     </div>
                 </div>
-            </section>
-            <ol>
-                <li>
-                    <p id="footer">La chilinga - Escuela popular de percusión | 2022</p>
-                </li>
-            </ol>
+            </div>
+            <div class="col-12 d-flex mt-5">
+                <p id="footer">La chilinga - Escuela popular de percusión | 2022</p>
+            </div>
         </footer>
         <!--Finalización de footer-->
         <!--Javascript-->
